@@ -21,5 +21,17 @@ public class Main {
             printer.print();
         }
 
+        // open closed example
+        try{
+            String shape = "Circle";
+            Figure figureOpen =  (Figure) Class.forName("revision.figure.shape."+shape).newInstance();
+            System.out.println(figureOpen.name());
+
+        } catch (Exception e){
+            e.printStackTrace();
+            System.out.println("Shape tidak ditemukan");
+        }
+        // open closed example end
+
     }
 }

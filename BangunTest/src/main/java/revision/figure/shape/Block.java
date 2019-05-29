@@ -19,7 +19,12 @@ public class Block implements ThreeDimensionalFigure {
     }
 
     @Override
-    public Double calculteVolume() {
+    public String name() {
+        return "Persegi Panjang";
+    }
+
+    @Override
+    public Double calculateVolume() {
         return x * y * z;
     }
 
@@ -27,7 +32,7 @@ public class Block implements ThreeDimensionalFigure {
     public String toString() {
         return "Name: " + getClass().getSimpleName() +
                 "\n Side " + sides() +
-                "\n Volume " + calculteVolume()
+                "\n Volume " + calculateVolume()
                 ;
     }
 

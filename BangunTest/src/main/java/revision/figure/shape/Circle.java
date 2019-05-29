@@ -19,6 +19,11 @@ public class Circle implements TwoDimensionalFigure {
     }
 
     @Override
+    public String name() {
+        return "Lingkaran";
+    }
+
+    @Override
     public Double calculateArea() {
         return (radius * radius * 3.14);
     }
